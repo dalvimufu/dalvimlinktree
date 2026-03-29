@@ -49,7 +49,8 @@ body {
 .botao,
 .botao-2,
 .botao-3,
-.botao-4 {
+.botao-4,
+.botao-5 {
     margin: 18px auto;
     width: min(250px, 90vw);       /* responsivo */
     text-align: center;
@@ -64,7 +65,8 @@ body {
 .botao a,
 .botao-2 a,
 .botao-3 a,
-.botao-4 a {
+.botao-4 a 
+.botao-5 a {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -74,6 +76,7 @@ body {
 .botao-2 { background-color: #F9F5EC; }
 .botao-3 { background-color: #FFD509; }
 .botao-4 { background-color: #F9F5EC; }
+.botao-5 { background-color: #FFD509; }
 
 /* Footer */
 footer {

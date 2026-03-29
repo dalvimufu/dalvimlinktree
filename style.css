@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#6D1835;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* ---------- HEADER ---------- */
+
+.link-tree{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+    max-width:600px;
+}
+
+.link-tree img{
+    width:50%;
+    max-width:250px;
+    height:auto;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.intro-pag-titulo{
+    text-align:center;
+    color:#F9F5EC;
+    font-size:clamp(20px,4vw,28px);
+    font-family:'Playfair Display', serif;
+}
+
+.intro-pag-frase{
+    text-align:center;
+    color:#F9F5EC;
+    font-size:clamp(14px,2.5vw,16px);
+    font-family:'Montserrat', sans-serif;
+    margin-top:15px;
+}
+
+/* ---------- BOTÕES ---------- */
+
+.botoes{
+    width:90%;
+    max-width:400px;
+}
+
+.botao{
+    width:100%;
+    text-align:center;
+    margin-top:15px;
+    font-family:'Montserrat', sans-serif;
+    font-size:14px;
+    border-radius:6px;
+    padding:12px;
+    cursor:pointer;
+}
+
+.botao a{
+    text-decoration:none;
+    color:#6D1835;
+    font-weight:600;
+}
+
+.amarelo{
+    background:#FFD509;
+}
+
+.branco{
+    background:#F9F5EC;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    margin-top:auto;
+    text-align:center;
+    background:#FFD509;
+    color:#6D1835;
+    font-family:'Montserrat', sans-serif;
+    font-size:13px;
+    width:100%;
+    padding:15px;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width:480px){
+
+.link-tree img{
+    width:60%;
+}
+
+.botao{
+    font-size:13px;
+    padding:10px;
+}
+
+}

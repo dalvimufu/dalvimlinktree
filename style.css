@@ -2,109 +2,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: #6D1835;
-}
-
-.intro-pag-titulo {
-    text-align: center;
-    color: #F9F5EC;
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
-}
-
-.intro-pag-frase {
-    text-align: center;
-    color: #F9F5EC;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    background: #FFD509;
-    color: #6D1835;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12.5px;
-    width: 100%;
-    height: 50px;    
-    line-height: 50px;
+    min-height: 100vh;
+    padding-bottom: 60px; /* espaço para o footer */
 }
 
 .link-tree {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 
 .link-tree img {
     margin-top: 17px;
-    width: min(250px, 90vw);
-    height: min(250px, 90vw);
+    width: min(250px, 85vw);     /* responsivo */
+    height: min(250px, 85vw);    /* responsivo */
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
-.botao {
-    margin: auto;
-    background-color: #FFD509;
-    width: min(250px, 90vw);
+.intro-pag-titulo {
     text-align: center;
-    margin-top: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11.5px;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
+    color: #F9F5EC;
+    font-size: min(25px, 6.5vw);   /* responsivo */
+    font-family: 'Playfair Display', serif;
+    padding: 0 15px;
 }
 
-.botao-2 {
-    margin: auto;
-    background-color: #F9F5EC;
-    width: min(250px, 90vw);
+.intro-pag-frase {
     text-align: center;
-    margin-top: 18px;
+    color: #F9F5EC;
+    font-size: min(15px, 4vw);     /* responsivo */
     font-family: 'Montserrat', sans-serif;
-    font-size: 11.5px;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
+    margin-top: 15px;
+    padding: 0 15px;
 }
 
-.botao-3 {
-    margin: auto;
-    background-color: #FFD509;
-    width: min(250px, 90vw);
-    text-align: center;
-    margin-top: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11.5px;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-}
-
+/* Botões - mantendo exatamente o mesmo visual, só responsivo */
+.botao,
+.botao-2,
+.botao-3,
 .botao-4 {
-    margin: auto;
-    background-color: #F9F5EC;
-    width: min(250px, 90vw);
+    margin: 18px auto;
+    width: min(250px, 90vw);       /* responsivo */
     text-align: center;
-    margin-top: 18px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11.5px;
+    font-size: min(11.5px, 3.2vw); /* responsivo */
     border-radius: 6px;
     padding: 10px;
     cursor: pointer;
     border: none;
+}
+
+.botao a,
+.botao-2 a,
+.botao-3 a,
+.botao-4 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.botao { background-color: #FFD509; }
+.botao-2 { background-color: #F9F5EC; }
+.botao-3 { background-color: #FFD509; }
+.botao-4 { background-color: #F9F5EC; }
+
+/* Footer */
+footer {
+    position: fixed;           /* melhor que absolute para responsividade */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #FFD509;
+    color: #6D1835;
+    font-family: 'Montserrat', sans-serif;
+    font-size: min(12.5px, 3.5vw);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
 }
